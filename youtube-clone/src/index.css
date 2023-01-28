@@ -40,8 +40,9 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #FC1503 !important;
+  background-color: #606060 !important;
   color: white !important;
+  font-weight: bolder;
 }
 
 .category-btn:hover span{
@@ -60,7 +61,7 @@ a {
 }
 
 .category-btn{
-  font-weight: bold !important;
+  font-weight: normal ;
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -68,6 +69,7 @@ a {
   cursor:pointer;
   background: transparent;
   outline: none;
+  color: white;
   border: none;
 
   padding: 7px 15px;

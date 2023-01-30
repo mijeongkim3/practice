@@ -1,9 +1,9 @@
 import { Stack } from '@mui/material';
 import { categories } from '../utils/constants';
 
-const selectedCategory = '홈';
+// const selectedCategory = '홈'; //밑에줄이 프롭스로 피드의 사이드바에 전달돼서 이게 필요없어짐
 
-const Sidebar = () => (
+const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
   <Stack
     direction="row"
     sx={{
@@ -15,6 +15,7 @@ const Sidebar = () => (
     {categories.map((category) => (
       <button
         className="category-btn"
+        onClick={() => setSelectedCategory(category.name)} //카테고리 눌렀을때 상단의 제목바뀌게
         style={{
           background: category.name === selectedCategory && '#606060',
           color: 'white',

@@ -16,7 +16,7 @@ const VideoCard = ({
   },
 }) => {
   console.log(videoId, snippet);
-  //프롭스
+  //프롭스..
 
   //   console.log(video);
   return <div>VideoCard</div>;

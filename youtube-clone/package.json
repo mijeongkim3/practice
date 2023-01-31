@@ -1,13 +1,13 @@
 {
-  "name": "youtube-clone",
-  "version": "0.1.0",
+  "name": "project_youtube_video_player",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.11.6",
-    "axios": "^0.26.2",
+    "@mui/material": "^5.9.3",
+    "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-player": "^2.10.1",
@@ -37,13 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^8.32.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "prettier": "^2.8.3",
-    "typescript": "^4.9.4",
-    "web-vitals": "^3.1.1"
   }
 }

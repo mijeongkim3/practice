@@ -3,7 +3,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import CodeIcon from '@mui/icons-material/Code';
 import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
-import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+// import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
@@ -21,8 +21,8 @@ export const categories = [
   { name: '홈', icon: <HomeIcon /> },
   { name: '인기', icon: <LocalFireDepartmentIcon /> },
   { name: '구독', icon: <SubscriptionsOutlinedIcon /> },
-  { name: 'ReactJS', icon: <CodeIcon /> },
-  { name: 'NextJS', icon: <CodeIcon /> },
+  { name: 'dkdkdk', icon: <CodeIcon /> },
+  { name: 'dkdedk', icon: <CodeIcon /> },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon /> },
   { name: 'Podcast', icon: <GraphicEqIcon /> },

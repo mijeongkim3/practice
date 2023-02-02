@@ -19,7 +19,6 @@ body {
   box-sizing: border-box;
 }
 
-
 a {
   text-decoration: none;
   color: black;
@@ -40,10 +39,13 @@ a {
   background-color: transparent;
 }
 
+.img {
+  height:20px;
+  width:100px;
+}
 .category-btn:hover {
-  background-color: #606060 !important;
+  background-color: #FC1503 !important;
   color: white !important;
-  font-weight: bolder;
 }
 
 .category-btn:hover span{
@@ -55,14 +57,27 @@ a {
   width: 100% !important;
 }
 
+.css-1qieykl-MuiPaper-root {
+   width: 600px;
+    
+}
+
 .search-bar{
   border:none;
   outline:none;
-  width:350px;
+  width: calc(100% - 60px); 
+  /* 위에 css-1qieykl-MuiPaper-root(paper값)에 realative주고 그 paper값의 100퍼센트 크기에서 항상 60px만큼 줄어들도록 */
+  margin-right: 5px;
+  
+}
+
+.search-bar::placeholder{
+  color:white;
+  
 }
 
 .category-btn{
-  font-weight: normal ;
+  font-weight: bold !important;
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -70,8 +85,8 @@ a {
   cursor:pointer;
   background: transparent;
   outline: none;
-  color: white;
   border: none;
+  word-break: keep-all;
 
   padding: 7px 15px;
   margin: 10px 0px;
@@ -79,13 +94,35 @@ a {
   transition: all 0.3s ease;
 }
 
+.category-span{
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: medium;
+    word-break: keep-all;
+}
+
+.category-hr{
+  width: 210px; 
+  border: 1px solid #606060;
+  
+}
+
 @media screen and (max-width: 900px) {
   .category-btn{
     margin: 10px;
+    
+  }
+  .category-span{display:none;}
+  .category-hr{
+    height: 40px; 
+    margin-top: 20px;
+    border: 1px solid #606060;
+  
   }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
   .copyright{
     display:none !important;
   }
@@ -99,9 +136,56 @@ a {
   .react-player {
     height: 45vh !important;
   }
-  .search-bar{
-    width:200px;
-  }
 }
 
 
+@media screen and (max-width: 600px) {
+/* .css-1630peb-MuiPaper-root {
+  margin-left: 100px;
+  width: 400px;
+} */
+.paper {
+  width:100px;
+  margin-left:50px;
+}
+.img {
+  width:70px;
+}
+/* .icon{
+  margin-right:200px;
+
+} */
+/* .css-itnvja-MuiButtonBase-root-MuiIconButton-root{
+  margin-right:500px;
+} */
+}
+
+@media screen and (max-width: 900px) {
+  /* .css-1630peb-MuiPaper-root {
+    margin-left: 100px;
+    width: 400px;
+  } */
+  .paper {
+    width:600px;
+    margin-left:50px;
+  }
+  .img {
+    width:70px;
+    height:20px;
+  }
+  /* .icon{
+    margin-right:200px;
+  
+  } */
+  /* .css-itnvja-MuiButtonBase-root-MuiIconButton-root{
+    margin-right:400px;
+  } */
+  }
+
+  @media (min-width: 900px){
+
+  .css-juvfsk {
+    margin-right: 40px;
+    width: 600px;
+}
+  }

@@ -12,31 +12,48 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
       flexDirection: { md: 'column' },
     }}
   >
-    {categories.map((category) => (
-      <button
-        className="category-btn"
-        onClick={() => setSelectedCategory(category.name)} //카테고리 눌렀을때 상단의 제목바뀌게
-        style={{
-          background: category.name === selectedCategory && '#606060',
-          color: 'white',
-        }}
-        key={category.name}
-      >
-        <span
-          className="category-icon"
+    {categories.map((category, i) => (
+      <>
+        {i == 3 && (
+          <>
+            <hr className="category-hr" />
+            <span className="category-span">탐색</span>
+          </>
+        )}
+        {i == 15 && (
+          <>
+            <hr className="category-hr" />
+            <span className="category-span">구독</span>
+          </>
+        )}
+        <button
+          className="category-btn"
+          onClick={() => setSelectedCategory(category.name)} //카테고리 눌렀을때 상단의 제목바뀌게
           style={{
-            color: category.name === selectedCategory ? 'red' : 'white',
-            marginRight: '15px',
+            background: category.name === selectedCategory && '#606060',
+            color: 'white',
           }}
+          key={category.name}
         >
-          {category.icon}
-        </span>
-        <span
-          style={{ opacity: category.name === selectedCategory ? '1' : '0.8' }}
-        >
-          {category.name}
-        </span>
-      </button>
+          <span
+            className="category-icon"
+            style={{
+              color: category.name === selectedCategory ? 'red' : 'white',
+              marginRight: '15px',
+            }}
+          >
+            {category.icon}
+          </span>
+
+          <span
+            style={{
+              opacity: category.name === selectedCategory ? '1' : '0.8',
+            }}
+          >
+            {category.name}
+          </span>
+        </button>
+      </>
     ))}
   </Stack>
 );

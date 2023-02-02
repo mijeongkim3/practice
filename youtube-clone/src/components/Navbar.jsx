@@ -2,7 +2,7 @@ import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 // import { logo } from '../utils/constants';
-import logo from '../YouTube_Logo.svg.png';
+import logo from '../youtube_logo.png';
 import { SearchBar } from './';
 
 const Navbar = () => (
@@ -18,9 +18,24 @@ const Navbar = () => (
     }}
   >
     <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
-      <img src={logo} alt="logo" height={45} />
+      <img
+        className="img"
+        src={logo}
+        alt="logo"
+        // height={20} width={100}
+      />
     </Link>
     <SearchBar />
+    <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+      <img
+        className="img"
+        src={logo}
+        alt="logo"
+        // height={20}
+        // width={100}
+        style={{ visibility: 'hidden' }}
+      />
+    </Link>
   </Stack>
 );
 

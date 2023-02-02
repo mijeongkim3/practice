@@ -28,7 +28,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         )}
         <button
           className="category-btn"
-          onClick={() => setSelectedCategory(category.name)} //카테고리 눌렀을때 상단의 제목바뀌게
+          onClick={() => setSelectedCategory(category.name)} //카테고리 눌렀을때 상단의 제목바뀌게..
           style={{
             background: category.name === selectedCategory && '#606060',
             color: 'white',

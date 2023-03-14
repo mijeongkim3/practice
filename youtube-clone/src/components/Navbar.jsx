@@ -22,7 +22,7 @@ const Navbar = () => (
         className="img"
         src={logo}
         alt="logo"
-        // height={20} width={100}
+        // height={20} width={100}//
       />
     </Link>
     <SearchBar />
